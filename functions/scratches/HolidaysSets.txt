@@ -1,0 +1,505 @@
+# Dates for prediction
+Train years pool
+
+2016
+2015
+2014
+2013
+2012
+
+Test years pool
+2017
+2018
+2019
+
+1. Stable Day Holidays
+
+# 1.Theofania holiday
+
+# Train lag days input
+loadTrainDayTarget = load2016['2016-01-06']
+loadTrainDayMinus1 = load2016['2016-01-05']
+loadTrainDayMinus7 = load2015['2015-12-30']
+loadTrainDayMinus365 = load2015['2015-01-06']
+loadTrainDayMinus730 = load2014['2014-01-06']
+
+
+# Train temperature lag inputs
+temperTrainDayTarget = temp2016['2016-01-06']
+temperTrainDayMinus1 = temp2016['2016-01-05']
+temperTrainDayMinus7 = temp2015['2015-12-30']
+temperTrainDayMinus365 = temp2015['2015-01-06']
+temperTrainDayMinus730 = temp2014['2014-01-06']
+
+##############################################
+
+# Test lag days input
+loadTestDayTarget = load2019['2019-01-06']
+loadTestDayMinus1 = load2019['2019-01-05']
+loadTestDayMinus7 = load2018['2018-12-30']
+loadTestDayMinus365 = load2018['2018-01-06']
+loadTestDayMinus730 = load2017['2017-01-06']
+
+
+# Test lag temperature input
+temperTestDayTarget = load2019['2019-01-06']
+temperTestDayMinus1 = temp2019['2019-01-06']
+temperTestDayMinus7 = temp2018['2018-12-30']
+temperTestDayMinus365 = temp2018['2018-01-06']
+temperTestDayMinus730 = temp2017['2017-01-06']
+########################################################################################################################
+
+# 2. 25th March anniversary
+
+# Train lag days input
+loadTrainDayTarget = load2015['2015-03-25']
+loadTrainDayMinus1 = load2015['2015-03-24']
+loadTrainDayMinus7 = load2015['2015-03-18']
+loadTrainDayMinus365 = load2014['2014-03-25']
+loadTrainDayMinus730 = load2013['2013-03-25']
+
+
+# Train temperature lag inputs
+temperTrainDayTarget = temp2015['2015-03-25']
+temperTrainDayMinus1 = temp2015['2015-03-24']
+temperTrainDayMinus7 = temp2015['2015-03-18']
+temperTrainDayMinus365 = temp2014['2014-03-25']
+temperTrainDayMinus730 = temp2013['2013-03-25']
+
+##############################################
+
+# Test lag days input
+loadTestDayTarget = load2019['2019-03-25']
+loadTestDayMinus1 = load2019['2019-03-24']
+loadTestDayMinus7 = load2018['2018-03-18']
+loadTestDayMinus365 = load2018['2018-03-25']
+loadTestDayMinus730 = load2017['2017-03-25']
+
+
+# Test lag temperature input
+temperTestDayTarget = load2019['2019-03-25']
+temperTestDayMinus1 = temp2019['2019-03-24']
+temperTestDayMinus7 = temp2018['2018-12-18']
+temperTestDayMinus365 = temp2018['2018-03-25']
+temperTestDayMinus730 = temp2017['2017-03-25']
+
+#######################################################################################################################
+
+# 3. Labour Day(1rst May)
+
+
+# Train lag days input
+loadTrainDayTarget = load2016['2016-05-01']
+loadTrainDayMinus1 = load2016['2016-04-30']
+loadTrainDayMinus7 = load2016['2016-04-24']
+loadTrainDayMinus365 = load2015['2015-05-01']
+loadTrainDayMinus730 = load2014['2014-05-01']
+
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-05-01']
+temperTrainDayMinus1 = load2016['2016-04-30']
+temperTrainDayMinus7 = load2016['2016-04-24']
+temperTrainDayMinus365 = load2015['2015-05-01']
+temperTrainDayMinus730 = load2014['2014-05-01']
+
+##############################################
+
+# Test lag days input
+loadTestDayTarget = load2019['2019-05-01']
+loadTestDayMinus1 = load2019['2019-04-30']
+loadTestDayMinus7 = load2019['2019-04-24']
+loadTestDayMinus365 = load2018['2018-05-01']
+loadTestDayMinus730 = load2017['2017-05-01']
+
+
+# Test temperature lag inputs
+temperTestDayTarget = load2019['2019-05-01']
+temperTestDayMinus1 = load2019['2019-04-30']
+temperTestDayMinus7 = load2019['2019-04-24']
+temperTestDayMinus365 = load2018['2018-05-01']
+temperTestDayMinus730 = load2017['2017-05-01']
+
+#######################################################################################################################
+
+# 4. 15 August
+
+
+# Train lag days input
+loadTrainDayTarget = load2015['2015-08-15']
+loadTrainDayMinus1 = load2015['2015-08-14']
+loadTrainDayMinus7 = load2015['2015-08-08']
+loadTrainDayMinus365 = load2014['2014-08-15']
+loadTrainDayMinus730 = load2013['2013-08-15']
+
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2015['2015-08-15']
+temperTrainDayMinus1 = load2015['2015-08-14']
+temperTrainDayMinus7 = load2015['2015-08-08']
+temperTrainDayMinus365 = load2014['2014-08-15']
+temperTrainDayMinus730 = load2013['2013-08-15']
+
+##############################################
+
+# Test lag days input
+loadTestDayTarget = load2019['2019-08-15']
+loadTestDayMinus1 = load2019['2019-08-14']
+loadTestDayMinus7 = load2019['2019-08-08']
+loadTestDayMinus365 = load2018['2018-08-15']
+loadTestDayMinus730 = load2017['2017-08-15']
+
+
+# Test temperature lag inputs
+temperTestDayTarget = load2019['2019-08-15']
+temperTestDayMinus1 = load2019['2019-08-14']
+temperTestDayMinus7 = load2019['2019-08-08']
+temperTestDayMinus365 = load2018['2018-08-15']
+temperTestDayMinus730 = load2017['2017-08-15']
+
+#######################################################################################################################
+
+# 5. 28th October
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-10-28']
+loadTrainDayMinus1 = load2016['2016-10-27']
+loadTrainDayMinus7 = load2016['2016-10-21']
+loadTrainDayMinus365 = load2015['2015-10-28']
+loadTrainDayMinus730 = load2014['2014-10-28']
+
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-10-28']
+temperTrainDayMinus1 = load2016['2016-10-27']
+temperTrainDayMinus7 = load2016['2016-10-21']
+temperTrainDayMinus365 = load2015['2015-10-28']
+temperTrainDayMinus730 = load2014['2014-10-28']
+
+##############################################
+
+# Test lag days input
+loadTestDayTarget = load2019['2019-10-28']
+loadTestDayMinus1 = load2019['2019-10-27']
+loadTestDayMinus7 = load2019['2019-10-21']
+loadTestDayMinus365 = load2018['2018-10-28']
+loadTestDayMinus730 = load2018['2018-10-28']
+
+
+# Test temperature lag inputs
+temperTestDayTarget = load2019['2019-10-28']
+temperTestDayMinus1 = load2019['2019-10-27']
+temperTestDayMinus7 = load2019['2019-10-21']
+temperTestDayMinus365 = load2018['2018-10-28']
+temperTestDayMinus730 = load2017['2017-10-28']
+
+########################################################################################################################
+
+# 6. ChristmasDay
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-12-25']
+loadTrainDayMinus1 = load2016['2016-12-24']
+loadTrainDayMinus7 = load2016['2016-12-18']
+loadTrainDayMinus365 = load2015['2015-12-25']
+loadTrainDayMinus730 = load2014['2014-12-25']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-12-25']
+temperTrainDayMinus1 = load2016['2016-12-24']
+temperTrainDayMinus7 = load2016['2016-12-18']
+temperTrainDayMinus365 = load2015['2015-12-25']
+temperTrainDayMinus730 = load2014['2014-12-25']
+
+###############################################
+#Test lag days input
+loadTestDayTarget = load2019['2019-12-25']
+loadTestDayMinus1 = load2019['2019-12-24']
+loadTestDayMinus7 = load2019['2019-12-18']
+loadTestDayMinus365 = load2018['2018-12-25']
+loadTestDayMinus730 = load2017['2017-12-25']
+
+#test lag temperature input
+temperTestDayTarget = load2019['2019-12-25']
+temperTestDayMinus1 = load2019['2019-12-24']
+temperTestDayMinus7 = load2019['2019-12-18']
+temperTestDayMinus365 = load2018['2018-12-25']
+temperTestDayMinus730 = load2017['2017-12-25']
+########################################################################################################################
+
+# 7. Day After Christmas
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-12-26']
+loadTrainDayMinus1 = load2016['2016-12-25']
+loadTrainDayMinus7 = load2016['2016-12-19']
+loadTrainDayMinus365 = load2015['2015-12-26']
+loadTrainDayMinus730 = load2014['2014-12-26']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-12-26']
+temperTrainDayMinus1 = load2016['2016-12-25']
+temperTrainDayMinus7 = load2016['2016-12-19']
+temperTrainDayMinus365 = load2015['2015-12-26']
+temperTrainDayMinus730 = load2014['2014-12-26']
+
+##############################################
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-12-26']
+loadTestDayMinus1 = load2019['2019-12-25']
+loadTestDayMinus7 = load2019['2019-12-19']
+loadTestDayMinus365 = load2018['2018-12-26']
+loadTestDayMinus730 = load2017['2017-12-26']
+
+#test lag temperature input
+temperTestDayTarget = load2019['2019-12-26']
+temperTestDayMinus1 = load2019['2019-12-25']
+temperTestDayMinus7 = load2019['2019-12-19']
+temperTestDayMinus365 = load2018['2018-12-26']
+temperTestDayMinus730 = load2017['2017-12-26']
+
+#######################################################################################################################
+
+# 8. New Year
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-01-01']
+loadTrainDayMinus1 = load2015['2015-12-31']
+loadTrainDayMinus7 = load2015['2015-12-25']
+loadTrainDayMinus365 = load2015['2015-01-01']
+loadTrainDayMinus730 = load2014['2014-01-01']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-01-01']
+temperTrainDayMinus1 = load2015['2015-12-29']
+temperTrainDayMinus7 = load2015['2015-12-25']
+temperTrainDayMinus365 = load2015['2015-01-01']
+temperTrainDayMinus730 = load2014['2014-01-01']
+##############################################
+
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-01-01']
+loadTestDayMinus1 = load2018['2018-12-31']
+loadTestDayMinus7 = load2018['2018-12-25']
+loadTestDayMinus365 = load2018['2018-01-01']
+loadTestDayMinus730 = load2017['2017-01-01']
+
+# Train temperature lag inputs
+temperTestDayTarget = load2019['2019-01-01']
+temperTestDayMinus1 = load2018['2018-12-29']
+temperTestDayMinus7 = load2018['2018-12-25']
+temperTestDayMinus365 = load2018['2018-01-01']
+temperTestDayMinus730 = load2017['2017-01-01']
+
+#######################################################################################################################
+
+# 2. Variable Dates Holidays
+
+# 9. Clean Monday
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-03-14']
+loadTrainDayMinus1 = load2016['2016-03-13']
+loadTrainDayMinus7 = load2016['2016-03-07']
+loadTrainDayMinus365 = load2015['2015-02-23']
+loadTrainDayMinus730 = load2014['2014-03-03']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-03-14']
+temperTrainDayMinus1 = load2016['2016-03-13']
+temperTrainDayMinus7 = load2016['2016-03-07']
+temperTrainDayMinus365 = load2015['2015-02-23']
+temperTrainDayMinus730 = load2014['2014-03-03']
+
+##############################################
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-03-11']
+loadTestDayMinus1 = load2019['2019-03-10']
+loadTestDayMinus7 = load2019['2019-03-04']
+loadTestDayMinus365 = load2018['2018-02-19']
+loadTestDayMinus730 = load2017['2017-02-27']
+
+# Train temperature lag inputs
+temperTestDayTarget = load2019['2019-03-11']
+temperTestDayMinus1 = load2019['2019-03-10']
+temperTestDayMinus7 = load2019['2019-03-04']
+temperTestDayMinus365 = load2018['2018-02-19']
+temperTestDayMinus730 = load2017['2017-02-27']
+
+########################################################################################################################
+
+# 10. Good Friday
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-04-29']
+loadTrainDayMinus1 = load2016['2016-04-28']
+loadTrainDayMinus7 = load2016['2016-04-22']
+loadTrainDayMinus365 = load2015['2015-04-10']
+loadTrainDayMinus730 = load2014['2014-04-18']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-04-29']
+temperTrainDayMinus1 = load2016['2016-04-28']
+temperTrainDayMinus7 = load2016['2016-04-22']
+temperTrainDayMinus365 = load2015['2015-04-10']
+temperTrainDayMinus730 = load2014['2014-04-18']
+
+##############################################
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-04-26']
+loadTestDayMinus1 = load2019['2019-04-25']
+loadTestDayMinus7 = load2019['2019-04-19']
+loadTestDayMinus365 = load2018['2018-04-06']
+loadTestDayMinus730 = load2017['2017-04-14']
+
+# Train temperature lag inputs
+temperTestDayTarget = load2019['2019-04-26']
+temperTestDayMinus1 = load2019['2019-04-25']
+temperTestDayMinus7 = load2019['2019-04-19']
+temperTestDayMinus365 = load2018['2018-04-06']
+temperTestDayMinus730 = load2017['2017-04-14']
+
+########################################################################################################################
+
+#11. Easter Day
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-05-01']
+loadTrainDayMinus1 = load2016['2016-04-30']
+loadTrainDayMinus7 = load2016['2016-04-24']
+loadTrainDayMinus365 = load2015['2015-04-12']
+loadTrainDayMinus730 = load2014['2014-04-20']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-05-01']
+temperTrainDayMinus1 = load2016['2016-04-30']
+temperTrainDayMinus7 = load2016['2016-04-24']
+temperTrainDayMinus365 = load2015['2015-04-12']
+temperTrainDayMinus730 = load2014['2014-04-20']
+
+##############################################
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-04-28']
+loadTestDayMinus1 = load2019['2019-04-27']
+loadTestDayMinus7 = load2019['2019-04-21']
+loadTestDayMinus365 = load2018['2018-04-08']
+loadTestDayMinus730 = load2017['2017-04-16']
+
+# Train temperature lag inputs
+temperTestDayTarget = load2019['2019-04-28']
+temperTestDayMinus1 = load2019['2019-04-27']
+temperTestDayMinus7 = load2019['2019-04-21']
+temperTestDayMinus365 = load2018['2018-04-08']
+temperTestDayMinus730 = load2017['2017-04-16']
+
+########################################################################################################################
+
+#12. Easter Monday
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-05-02']
+loadTrainDayMinus1 = load2016['2016-05-01']
+loadTrainDayMinus7 = load2016['2016-04-25']
+loadTrainDayMinus365 = load2015['2015-04-13']
+loadTrainDayMinus730 = load2014['2014-04-21']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-05-02']
+temperTrainDayMinus1 = load2016['2016-05-01']
+temperTrainDayMinus7 = load2016['2016-04-25']
+temperTrainDayMinus365 = load2015['2015-04-13']
+temperTrainDayMinus730 = load2014['2014-04-21']
+##############################################
+
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-04-29']
+loadTestDayMinus1 = load2019['2019-04-28']
+loadTestDayMinus7 = load2019['2019-04-22']
+loadTestDayMinus365 = load2018['2018-04-09']
+loadTestDayMinus730 = load2017['2017-04-17']
+
+# Train temperature lag inputs
+temperTestDayTarget = load2019['2019-04-29']
+temperTestDayMinus1 = load2019['2019-04-28']
+temperTestDayMinus7 = load2019['2019-04-22']
+temperTestDayMinus365 = load2018['2018-04-09']
+temperTestDayMinus730 = load2017['2017-04-17']
+########################################################################################################################
+
+# 13. Pentikosti Holiday
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-06-19']
+loadTrainDayMinus1 = load2016['2016-06-18']
+loadTrainDayMinus7 = load2016['2016-06-12']
+loadTrainDayMinus365 = load2015['2015-05-31']
+loadTrainDayMinus730 = load2014['2014-06-08']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-06-19']
+temperTrainDayMinus1 = load2016['2016-06-18']
+temperTrainDayMinus7 = load2016['2016-06-12']
+temperTrainDayMinus365 = load2015['2015-05-31']
+temperTrainDayMinus730 = load2014['2014-06-08']
+
+##############################################
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-06-16']
+loadTestDayMinus1 = load2019['2019-06-15']
+loadTestDayMinus7 = load2019['2019-06-09']
+loadTestDayMinus365 = load2018['2018-05-27']
+loadTestDayMinus730 = load2017['2017-06-04']
+
+# Train temperature lag inputs
+temperTestDayTarget = load2019['2019-06-16']
+temperTestDayMinus1 = load2019['2019-06-15']
+temperTestDayMinus7 = load2019['2019-06-09']
+temperTestDayMinus365 = load2018['2018-05-27']
+temperTestDayMinus730 = load2017['2017-06-04']
+
+########################################################################################################################
+
+# 14. Holly Spirit Holiday
+
+# Train Load lag inputs
+loadTrainDayTarget = load2016['2016-06-20']
+loadTrainDayMinus1 = load2016['2016-06-19']
+loadTrainDayMinus7 = load2016['2016-06-13']
+loadTrainDayMinus365 = load2015['2015-06-01']
+loadTrainDayMinus730 = load2014['2014-06-09']
+
+# Train temperature lag inputs
+temperTrainDayTarget = load2016['2016-06-20']
+temperTrainDayMinus1 = load2016['2016-06-19']
+temperTrainDayMinus7 = load2016['2016-06-13']
+temperTrainDayMinus365 = load2015['2015-06-01']
+temperTrainDayMinus730 = load2014['2014-06-09']
+
+##############################################
+#Test lag days input
+
+loadTestDayTarget = load2019['2019-06-17']
+loadTestDayMinus1 = load2019['2019-06-16']
+loadTestDayMinus7 = load2019['2019-06-10']
+loadTestDayMinus365 = load2018['2018-05-28']
+loadTestDayMinus730 = load2017['2017-06-05']
+
+# Train temperature lag inputs
+temperTestDayTarget = load2019['2019-06-17']
+temperTestDayMinus1 = load2019['2019-06-16']
+temperTestDayMinus7 = load2019['2019-06-10']
+temperTestDayMinus365 = load2018['2018-05-28']
+temperTestDayMinus730 = load2017['2017-06-05']
+
+
+
+
+
+
