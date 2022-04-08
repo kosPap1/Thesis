@@ -12,38 +12,41 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
 # Holiday Datasets Lags
 
-# 14. Holly Spirit Holiday
+# 5. 28th October
 
 # Train Load lag inputs
-loadTrainDayTarget = load2016['2016-06-20']
-loadTrainDayMinus1 = load2016['2016-06-19']
-loadTrainDayMinus7 = load2016['2016-06-13']
-loadTrainDayMinus365 = load2015['2015-06-01']
-loadTrainDayMinus730 = load2014['2014-06-09']
+loadTrainDayTarget = load2016['2016-10-28']
+loadTrainDayMinus1 = load2016['2016-10-27']
+loadTrainDayMinus7 = load2016['2016-10-21']
+loadTrainDayMinus365 = load2015['2015-10-28']
+loadTrainDayMinus730 = load2014['2014-10-28']
+
 
 # Train temperature lag inputs
-temperTrainDayTarget = load2016['2016-06-20']
-temperTrainDayMinus1 = load2016['2016-06-19']
-temperTrainDayMinus7 = load2016['2016-06-13']
-temperTrainDayMinus365 = load2015['2015-06-01']
-temperTrainDayMinus730 = load2014['2014-06-09']
+temperTrainDayTarget = load2016['2016-10-28']
+temperTrainDayMinus1 = load2016['2016-10-27']
+temperTrainDayMinus7 = load2016['2016-10-21']
+temperTrainDayMinus365 = load2015['2015-10-28']
+temperTrainDayMinus730 = load2014['2014-10-28']
 
 ##############################################
-#Test lag days input
 
-loadTestDayTarget = load2019['2019-06-17']
-loadTestDayMinus1 = load2019['2019-06-16']
-loadTestDayMinus7 = load2019['2019-06-10']
-loadTestDayMinus365 = load2018['2018-05-28']
-loadTestDayMinus730 = load2017['2017-06-05']
+# Test lag days input
+loadTestDayTarget = load2019['2019-10-28']
+loadTestDayMinus1 = load2019['2019-10-27']
+loadTestDayMinus7 = load2019['2019-10-21']
+loadTestDayMinus365 = load2018['2018-10-28']
+loadTestDayMinus730 = load2018['2018-10-28']
 
-# Train temperature lag inputs
-temperTestDayTarget = load2019['2019-06-17']
-temperTestDayMinus1 = load2019['2019-06-16']
-temperTestDayMinus7 = load2019['2019-06-10']
-temperTestDayMinus365 = load2018['2018-05-28']
-temperTestDayMinus730 = load2017['2017-06-05']
 
+# Test temperature lag inputs
+temperTestDayTarget = load2019['2019-10-28']
+temperTestDayMinus1 = load2019['2019-10-27']
+temperTestDayMinus7 = load2019['2019-10-21']
+temperTestDayMinus365 = load2018['2018-10-28']
+temperTestDayMinus730 = load2017['2017-10-28']
+
+########################################################################################################################
 
 # Training Sets
 
@@ -101,8 +104,8 @@ testSetY = scaler.fit_transform(testSetY)*scaler_coeff
 ###########################################################
 
 # running the MLP regression
-MLPreg = MLPRegressor(hidden_layer_sizes=(24, 24, 24), activation="relu", solver='adam', random_state=1,
-                      max_iter=2000, learning_rate='adaptive').fit(trainSetX, trainSetY.ravel())
+MLPreg = MLPRegressor(hidden_layer_sizes=(64, 128, 64), activation="relu", solver='adam', random_state=0,
+                      max_iter=2000, learning_rate='constant', verbose=True, shuffle=False).fit(trainSetX, trainSetY.ravel())
 
 ###########################################################
 

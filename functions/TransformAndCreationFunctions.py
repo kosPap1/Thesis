@@ -66,8 +66,8 @@ def daysOfTheWeekReferance(lag1, lag2, lag3, lag4):
 def setCreation(target, lag1, weekDayLag1, lag2, weekDayLag2, lag3, weekDayLag3, lag4, weekDayLag4, temperTarget, temperLag1, temperLag2, temperLag3, temperLag4):
 
          #trainSetX
-         maxLoad = ((max(lag3)) + (max(lag4))) / 2 # creating average max load values
-         minLoad = ((min(lag3)) + (min(lag4))) / 2 # creating average min value
+         maxLoad = ((max(lag1)) + (max(lag2)) + (max(lag3)) + (max(lag4))) / 4 # creating average max load values
+         minLoad = ((min(lag1)) + (min(lag2)) + (min(lag3)) + (min(lag4))) / 4 # creating average min value
          data = []
          for i in range(0, 24):
               temp = [lag1[i], math.sin(weekDayLag1), lag2[i], math.sin(weekDayLag2), lag3[i], math.sin(weekDayLag3), lag4[i], math.sin(weekDayLag4), temperTarget[i], temperLag1[i], temperLag2[i], temperLag3[i], temperLag4[i], math.cos(i + 1), maxLoad, minLoad]
